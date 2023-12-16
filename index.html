@@ -14,14 +14,14 @@
            
         }
 
-
+       
 
 
 
 
         header{
             background:linear-gradient(to left, rgba(5, 0, 0, 0.7),rgba(115, 128, 118, 0.6),rgba(3, 32, 8, 0.9));
-            min-height: 55px;
+            min-height: 4rem;
             margin-bottom: 10px;
             /* border-radius: 4px; */
             
@@ -38,8 +38,9 @@
             text-decoration: none;
             color: white;
             font-weight: bolder;
-            margin: 10px;
-            font-size: 1.2rem;
+            /* margin: 10px; */
+            margin: 1rem;
+            font-size: 1.2em;
         }
 
         
@@ -48,11 +49,15 @@
 
         main{
             
-            margin: auto;
+            /* margin: 1em; */
             display: grid;
             grid-template-columns: auto auto auto auto;
-            width: 80%;
-            gap:15px ;
+            gap:1em;
+            justify-content: center;
+
+            /* width: 80%; */
+            /* gap:15px ; */
+            font-size: 1em;
             
             
         }
@@ -60,14 +65,16 @@
             border: 2px solid rgb(181, 178, 178);
             border-radius: 5px;
             background-color: rgb(230, 233, 230);
-            padding: 10px;
+            padding: .2em;
             /* margin: 10px; */
             box-shadow: 1px 1px 20px black;
+            
         }
 
         main>div>p{
             color:brown;
             font-style: italic;
+            
         }
         main>div>a{
             text-decoration: none;
@@ -77,6 +84,29 @@
         .fork{
             height: 1em;
         }
+
+        div>img{
+            width:80%;
+
+        }
+
+
+        @media (max-width:485px){
+            
+            nav{
+                flex-direction: column;
+                align-items: center;
+
+            }
+            body{
+                /* background: red; */
+                width: 480px;
+            }
+            main{
+                font-size: .8em;
+            }
+
+    }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -125,7 +155,7 @@
                 <img src="fotos/hamburger.jpeg" alt="amburguesa">
                 <h3>Tarjeta 1</h3>
                 <p>Descripcion de la tarjeta 1.</p>
-                <a href="#">Ver más<img class="fork" src="./fork.svg" alt="fork"></a>
+                <a href="#">Ver más <img class="fork" src="./fork.svg" alt="fork"></a>
             </div>
             <div>
                 <img src="fotos/hotdogs.jpeg" alt="hotdogs">
@@ -149,7 +179,7 @@
                 <img src="fotos/hamburger.jpeg" alt="amburguesa">
                 <h3>Tarjeta 1</h3>
                 <p>Descripcion de la tarjeta 1.</p>
-                <a href="#">Ver más<img class="fork" src="./fork.svg" alt="fork"></a>
+                <a href="#">Ver más <img class="fork" src="./fork.svg" alt="fork"></a>
             </div>
             <div>
                 <img src="fotos/hotdogs.jpeg" alt="hotdogs">
@@ -169,7 +199,31 @@
                 <p>Descripcion de la tarjeta 4.</p>
                 <a href="#">Ver más<img class="fork" src="./fork.svg" alt="fork"></a>
             </div>
-        
+            <div>
+                <img src="fotos/hamburger.jpeg" alt="amburguesa">
+                <h3>Tarjeta 1</h3>
+                <p>Descripcion de la tarjeta 1.</p>
+                <a href="#">Ver más <img class="fork" src="./fork.svg" alt="fork"></a>
+            </div>
+            <div>
+                <img src="fotos/hotdogs.jpeg" alt="hotdogs">
+                <h3>Tarjeta 2</h3>
+                <p>Descripcion de la tarjeta 2.</p>
+                <a href="#">Ver más<img class="fork" src="./fork.svg" alt="fork"></a>
+            </div>
+            <div>
+                <img src="fotos/pizza.jpeg" alt="pizza">
+                <h3>Tarjeta 3</h3>
+                <p>Descripcion de la tarjeta 3.</p>
+                <a href="#">Ver más<img class="fork" src="./fork.svg" alt="fork"></a>
+            </div>
+            <div>
+                <img src="fotos/sodas.jpeg" alt="sodas">
+                <h3>Tarjeta 4</h3>
+                <p>Descripcion de la tarjeta 4.</p>
+                <a href="#">Ver más<img class="fork" src="./fork.svg" alt="fork"></a>
+            </div>
+            
         </main>
    
     
